@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>登录 - 典威 AI 行为分析运营平台</title>
+  <link rel="stylesheet" href="resources/css/login.css">
+</head>
+<body>
+  <main class="login-page">
+    <div class="login-grid"></div>
+    <div class="factory-silhouette" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <section class="login-shell">
+      <header>
+        <h1>典威 <strong>AI</strong> 行为分析运营平台</h1>
+        <small>DWE AI BEHAVIOR ANALYSIS OPERATION PLATFORM</small>
+      </header>
+      <form id="login-form" class="login-card">
+        <label><span><em>*</em> 账号</span><div class="input-box"><i>♙</i><input id="login-user" value="admin" autocomplete="username" placeholder="请输入账号或手机号"></div></label>
+        <label><span><em>*</em> 密码</span><div class="input-box"><i>⌁</i><input id="login-password" value="123456" type="password" autocomplete="current-password" placeholder="请输入6至18位密码"><button type="button" id="toggle-password" aria-label="显示密码">◉</button></div></label>
+        <label><span><em>*</em> 验证码</span><div class="captcha-row"><div class="input-box"><i>⌨</i><input id="login-captcha" value="DWE8" maxlength="4" placeholder="请输入验证码"></div><button type="button" id="captcha-code" title="点击刷新验证码">DWE8</button></div></label>
+        <div class="login-options"><label><input type="checkbox" checked> 记住账号</label><button type="button" id="forgot-password">忘记密码</button></div>
+        <button class="login-submit" type="submit"><span>登录</span><i>→</i></button>
+        <footer><em>演示账号：admin / 123456</em></footer>
+      </form>
+    </section>
+    <div id="login-message" class="login-message" role="status"></div>
+  </main>
+  <script src="resources/js/login.js"></script>
+</body>
+</html>
