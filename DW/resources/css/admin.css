@@ -113,6 +113,61 @@
 .admin-menu .system-management-submenu button.sub-menu{height:36px;padding-left:14px;border-radius:4px;font-size:13px}
 .admin-menu .system-management-submenu button.sub-menu i{width:19px;height:19px;font-size:11px}
 .admin-menu .system-management-submenu button.sub-menu.active{background:linear-gradient(90deg,#079be1,#0bc2cd);color:#fff;box-shadow:0 5px 12px #063f6640}
+.admin-menu .alarm-parent-button{height:42px;padding:0 14px;border-radius:5px;font-size:14px}
+.admin-menu .alarm-parent-button em{transform:rotate(-90deg);transition:.2s}
+.admin-menu .alarm-parent-button.open em{transform:rotate(0)}
+.admin-menu .alarm-parent-button:hover,.admin-menu .alarm-parent-button.section-active{background:#ffffff0d;color:#fff;box-shadow:none}
+.alarm-management-submenu{margin-left:18px;padding:3px 0 5px 8px;border-left:1px solid #61b9dc66}
+.alarm-management-submenu.collapsed{display:none}
+.admin-menu .alarm-management-submenu button.sub-menu{height:36px;padding-left:14px;border-radius:4px;font-size:13px}
+.admin-menu .alarm-management-submenu button.sub-menu i{width:19px;height:19px;font-size:11px}
+.admin-menu .alarm-management-submenu button.sub-menu.active{background:linear-gradient(90deg,#079be1,#0bc2cd);color:#fff;box-shadow:0 5px 12px #063f6640}
+.alarm-rule-filter{grid-template-columns:1.4fr 1fr 1fr}
+.alarm-rule-table th,.alarm-rule-table td{height:56px}
+.alarm-rule-table .danger-link{color:#e35b55}
+.alarm-rule-modal .alarm-rule-form label:last-child{grid-column:1/3}
+.report-time-filter{display:flex;align-items:flex-end;justify-content:space-between}
+.report-time-fields{display:grid;grid-template-columns:230px 230px;gap:14px}
+.report-time-fields label span{display:block;margin-bottom:7px;color:#536b7a;font-size:11px}
+.report-time-fields input{width:100%;height:38px;padding:0 11px;border:1px solid #d7e0e5;border-radius:4px;background:#fff;color:#526b7a;outline:0}
+.report-time-filter .filter-actions{margin-top:0}
+.report-stat-layout{grid-template-columns:1.05fr .95fr}
+.report-stat-layout .report-card{padding-bottom:0}
+.report-stat-layout .report-chart-card,.report-stat-layout .report-trend-card{min-height:330px}
+.report-stat-layout .report-type-card{min-height:0;grid-column:1/3}
+.report-stat-layout .report-chart-card .report-bars{height:276px}
+.report-stat-layout .list-head-actions{display:flex;align-items:center;gap:12px}
+.report-stat-layout .list-head-actions .primary-button{color:#fff;font-size:12px}
+.report-type-head,.report-type-row{display:grid;grid-template-columns:minmax(220px,1.8fr) repeat(3,minmax(75px,.6fr));align-items:center}
+.report-type-head{height:44px;padding:0 18px;background:#f4f7fa;color:#6a7f8c;font-size:11px}
+.report-type-head span:not(:first-child){text-align:center}
+.report-type-list{padding:0 18px}
+.report-type-row{height:58px;border-bottom:1px solid #e7eef2}
+.report-type-row:last-child{border-bottom:0}
+.report-type-row>span{display:flex;align-items:center;gap:9px}
+.report-type-row>span i{width:8px;height:8px;border-radius:50%}
+.report-type-row>span b{font-size:12px}
+.report-number-link{height:100%;display:flex;align-items:center;justify-content:center;border:0;background:transparent;color:#168fc7;font-size:13px;font-weight:700;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.report-number-link.handled{color:#18a77e}
+.report-number-link.pending{color:#e45e58}
+.report-number-link.total{color:#168fc7}
+.report-number-link:hover{background:#f0f9fc;color:#087ead}
+.report-trend-card{transition:.25s}
+.report-trend-card.focused{border-color:#16a8d3;box-shadow:0 0 0 3px #16a8d326}
+.report-trend-legend{height:48px;padding:0 22px;display:flex;align-items:center;gap:18px;color:#687f8c;font-size:11px}
+.report-trend-legend span{display:flex;align-items:center;gap:6px}
+.report-trend-legend span i{width:18px;height:3px;border-radius:3px}
+.report-trend-legend .handled i{background:#17a9d3}
+.report-trend-legend .pending i{background:#ef6862}
+.report-trend-legend em{margin-left:auto;color:#8497a3;font-style:normal;font-size:10px}
+.report-trend-chart{width:100%;height:240px;padding:0 14px 12px;overflow:visible}
+.report-trend-chart text{fill:#718692;font-size:10px}
+.report-trend-chart .trend-grid line{stroke:#e6edf1;stroke-width:1}
+.report-trend-chart .trend-line{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.report-trend-chart .trend-line.handled{stroke:#17a9d3}
+.report-trend-chart .trend-line.pending{stroke:#ef6862}
+.report-trend-chart .trend-dots.handled circle{fill:#fff;stroke:#17a9d3;stroke-width:3}
+.report-trend-chart .trend-dots.pending circle{fill:#fff;stroke:#ef6862;stroke-width:3}
 .system-filter{grid-template-columns:1.35fr repeat(3,1fr)}
 .system-user-layout{display:grid;grid-template-columns:238px minmax(0,1fr);gap:14px}
 .department-tree-card{min-height:510px;padding:12px;border:1px solid #d8e3e9;border-radius:6px;background:#fff;box-shadow:0 4px 14px #25445a0b}
