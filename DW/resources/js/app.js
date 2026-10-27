@@ -24,7 +24,7 @@
   function header(title) {
     var user = sessionStorage.getItem("dweUser") || "admin";
     return '<header class="topbar"><div class="brand"><span>◇</span><div><b>DWE DIGITAL</b><small>典威电子·智能制造中心</small></div></div><h1>' +
-      title + '</h1><div class="clock">' + (page === "dashboard" ? '<a class="admin-entry" href="管理后台-运营中心.html"><span>⚙</span> 管理后台</a>' : '') + '<div class="app-user"><i>' + escapeHtml(user.charAt(0).toUpperCase()) + '</i><span><b>' + escapeHtml(user) + '</b><small>平台管理员</small></span></div><button class="app-logout" id="app-logout">⇥ 退出登录</button></div></header>';
+      title + '</h1><div class="clock">' + ((page === "dashboard" || page === "tracking") ? '<a class="admin-entry" href="管理后台-运营中心.html"><span>⚙</span> 管理后台</a>' : '') + '<div class="app-user"><i>' + escapeHtml(user.charAt(0).toUpperCase()) + '</i><span><b>' + escapeHtml(user) + '</b><small>平台管理员</small></span></div><button class="app-logout" id="app-logout">⇥ 退出登录</button></div></header>';
   }
   function nav(active) {
     var items = [
